@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查看持仓</title>
+    <link rel="stylesheet" type="text/css" href="../css/Inventory.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>查看持仓</h2>
+        <button onclick="loadInventory()">刷新</button>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>代码</th>
+                    <th>名称</th>
+                    <th>买入价格</th>
+                    <th>最新价格</th>
+                    <th>盈亏金额</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="../js/Inventory.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>大盘行情</title>
+    <link rel="stylesheet" type="text/css" href="../css/Market.css">
+</head>
+
+<body>
+    <h2>大盘行情</h2>
+    <div class="button-container">
+        <button onclick="loadMarket('sh')">沪市</button>
+        <button onclick="loadMarket('sz')">深市</button>
+        <button onclick="loadMarket('cyb')">创业板</button>
+    </div>
+    <table id="marketTable">
+        <thead>
+            <tr>
+                <th>代码</th>
+                <th>名称</th>
+                <th>最新价格</th>
+                <th>当日涨跌幅%</th>
+                <th>当日涨跌价</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="../js/Market.js"></script>
+</body>
+
+</html>

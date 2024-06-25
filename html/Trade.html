@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>交易股票</title>
+    <link rel="stylesheet" type="text/css" href="../css/Trade.css">
+</head>
+
+<body>
+    <h2>交易股票</h2>
+    <form id="tradeForm">
+        <label for="stockCode">股票代码:</label>
+        <select id="stockCode" class="temp" required></select><br>
+        <label for="tradeType">交易类型:</label>
+        <select id="tradeType">
+            <option value="buy">买入</option>
+            <option value="sell">卖出</option>
+        </select><br>
+        <label for="amount">数量:</label>
+        <input type="number" id="amount" required><br>
+        <label for="price">价格:</label>
+        <input type="number" id="price" required><br>
+        <input type="button" value="提交" onclick="trade()">
+    </form>
+    <p id="tradeMessage"></p>
+    <h3>账户信息</h3>
+    <button onclick="getAccountBalance()">获取账户额度</button>
+    <p id="accountBalance"></p>
+    <script src="../js/Trade.js"></script>
+</body>
+
+</html>
